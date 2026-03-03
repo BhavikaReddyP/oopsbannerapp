@@ -1,0 +1,54 @@
+class CharacterPattern {
+
+    // Instance variables (store patterns)
+    String[] O = {
+            " *** ",
+            "*   *",
+            "*   *",
+            "*   *",
+            " *** "
+    };
+
+    String[] P = {
+            "**** ",
+            "*   *",
+            "**** ",
+            "*    ",
+            "*    "
+    };
+
+    // Instance method to print O
+    void printO() {
+        for (int i = 0; i < O.length; i++) {
+            System.out.println(O[i]);
+        }
+    }
+
+    // Instance method to print P
+    void printP() {
+        for (int i = 0; i < P.length; i++) {
+            System.out.println(P[i]);
+        }
+    }
+}
+
+public class OOPSBannerApp {
+
+    public static void main(String[] args) {
+
+        // Creating object
+        CharacterPattern obj = new CharacterPattern();
+
+        System.out.println("First O:");
+        obj.printO();
+
+        System.out.println("\nSecond O:");
+        obj.printO();
+
+        System.out.println("\nFirst P:");
+        obj.printP();
+
+        System.out.println("\nSecond P:");
+        obj.printP();
+    }
+}
